@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Lyft</title>
+</head>
+
+<body>
+  <!-- Pantalla inicial splash -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12" id="splash" style="display:none;">
+        <img id="title1" class="center-block" src="assets/img/logo.png" alt="Logo">
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+            <span class="sr-only">100% Complete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sección inicial -->
+  <div class="inicial">
+    <!-- sección de login -->
+    <div id="inicial" class="container back">
+      <div class="row">
+        <div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4" style="margin-top: 2em;">
+          <img class="img-responsive" src="assets/img/logo.png" alt="Logo">
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-2 col-sm-offset-2 col-xs-10 col-sm-10" style="margin-top: 2em;">
+            <img class="img-responsive" src="assets/img/globo.jpg" alt="Logo">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-offset-2 col-sm-offset-1 col-xs-10 col-sm-9" style="margin-top: 3em;">
+            <span class="input-group-btn">
+              <button class="btn btn-default btn-lg" type="button">LOG IN</button>
+            </span>
+            <span class="input-group-btn">
+              <button id="signUp" class="btn btn-default btn-lg" type="button">SIGN UP</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario en donde el usuario registra su país y número de teléfono -->
+    <div id="form" class="container" style="display: none">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12" style="margin-top: 2em;">
+          <span id="return" class="glyphicon glyphicon-menu-left btn btn-default" aria-hidden="true"></span>
+          <h2 style="text-align: center;">Sign up</h2>
+          <p style="text-align: center;">Join now for free ride credit</p>
+          <hr>
+          <div class="input-group">
+            <div class="input-group-btn search-panel">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      	<span id="search_concept">País</span> <span class="caret"></span>
+                      </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">México</a></li>
+                <li><a href="#">Chile</a></li>
+                <li><a href="#">Perú</a></li>
+                <li><a href="#">Argentina</a></li>
+              </ul>
+            </div>
+            <input type="hidden" name="search_param" value="all" id="search_param">
+            <input id="number" type="text" class="form-control" name="x" placeholder="ingrese número">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:5em;">
+        <div class="col-xs-12 col-sm-12">
+          <a id="btn-next" class="btn btn-default btn-lg btn-block disabled">Next</a>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

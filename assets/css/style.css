@@ -1,0 +1,56 @@
+body {
+  background: #000;
+  margin: 0;
+}
+
+.inicial .row {
+  margin: 0;
+}
+
+#splash {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(#76278f, #2b1e66);
+}
+
+#title1 {
+  width: 10em;
+  height: auto;
+  text-align: center;
+  padding-top: 40vh;
+  padding-bottom: 1em;
+}
+
+.progress {
+  margin-bottom: 45vh;
+}
+
+.progress-bar-success {
+  background-color: #76278f;
+}
+
+/* sección inicial */
+.back {
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+.btn-default {
+  background-color: #8f00ff;
+  font-weight: bold;
+  border-color: #380063;
+  color: #FFF;
+}
+
+.input-group-addon, .input-group-btn {
+  width: 0;
+}
+
+/* Sección de Formulario */
+#form {
+  color: #FFF;
+}
+
+.disabled {
+  background-color: #999999;
+}
