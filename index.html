@@ -124,41 +124,39 @@
           <h2 style="text-align: center;">Sign up</h2>
           <p style="text-align: center;">Join now for free ride credit</p>
           <hr>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12">
-            <form class="form-horizontal">
-            <div>
-            <!-- Sign In Form -->
-            <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="userid">Alias:</label>
-              <div class="controls">
-                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack">
-              </div>
-            </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <form class="form-horizontal">
+                <div>
+                  <!-- Sign In Formulario -->
+                  <!-- User input-->
+                  <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1" aria-hidden="true"></span>
+                    <input id="user" type="text" class="form-control" placeholder="First name  Last name" aria-describedby="basic-addon1">
+                  </div>
 
-            <!-- Password input-->
-            <div class="control-group">
-              <label class="control-label" for="passwordinput">Password:</label>
-              <div class="controls">
-                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********">
-              </div>
-            </div>
 
-            <!-- Multiple Checkboxes (inline) -->
-            <div class="control-group">
-              <label class="control-label" for="rememberme"></label>
-              <div class="controls">
-                <label class="checkbox inline" for="rememberme-0">
-                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
-                  I agree to Lyft'ss <a href="#">Terms of Service</a>
-                </label>
-              </div>
+                  <!-- Email input-->
+                  <div class="input-group" style="margin-top: 2em;">
+                    <span class="input-group-addon glyphicon glyphicon-envelope" id="basic-addon1" aria-hidden="true"></span>
+                    <input id="email" type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                  </div>
+
+
+                  <!-- Checkbox  -->
+                  <div class="control-group">
+                    <label class="control-label" for="rememberme"></label>
+                    <div class="controls">
+                      <label class="checkbox inline" for="rememberme-0">
+                        <input type="checkbox" name="rememberme" id="checkbox" value="Remember me">
+                        I agree to Lyft'ss <a href="#">Terms of Service</a>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-            </form>
-          </div>
-        </div>
         </div>
         <div class="row" style="margin-top:5em;">
           <div class="col-xs-12 col-sm-12">
@@ -168,6 +166,19 @@
       </div>
     </div>
 
+    <!-- Sección de confirmación -->
+    <div id="final" class="container-fluid" style="display: none">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <img class="center-block img-responsive" style="margin-top: 10em;" src="assets/img/logo.png" alt="Logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-offset-4 col-sm-offset-4 col-xs-4 col-sm-4">
+          <img class="img-responsive" src="https://images.vexels.com/media/users/3/143461/isolated/preview/6cdcfad63c487e445cc69083b916f2a9-red-check-mark-by-vexels.png" alt="ok!">
+        </div>
+      </div>
+    </div>
 
   </div>
 
