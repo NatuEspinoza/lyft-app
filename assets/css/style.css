@@ -1,5 +1,5 @@
 body {
-  background: #000;
+  background: #380063;
   margin: 0;
 }
 
@@ -34,11 +34,12 @@ body {
   height: 100vh;
   background-image: url(../img/background.jpg);
   background-size: cover;
+  background-position: left;
 }
 .btn-default {
-  background-color: #8f00ff;
+  background-color: #ff00bf;
   font-weight: bold;
-  border-color: #380063;
+  border-color: #ff00bf;
   color: #FFF;
 }
 
@@ -53,4 +54,11 @@ body {
 
 .disabled {
   background-color: #999999;
+}
+
+/* Estilos de Alerta con código*/
+.alert-success {
+  color: #380063;
+  background-color: #f660d0;
+  border-color: #f660d0;
 }
