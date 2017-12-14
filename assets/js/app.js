@@ -61,14 +61,14 @@ $(function() {
   $('#btn-next').click(function(result) {
     $('#number').val('');
     $('#btn-next').addClass('disabled');
+    $('#btn-ok').show();
     var result = 1; //test the output message
     var success = '<div class="alert alert-success fade in" role="alert">'
     var success = '<div class="alert alert-success fade in" role="alert">' +
       '<a class="close" data-dismiss="alert">&times</a>' +
       '<strong><span class="glyphicon glyphicon-ok"></span> Tu código es: ' +
       '<span style="font-size: 2em">LAB-</span><span style="font-size: 2em" id="numero-aleatorio" style="text-align:center;"> </span>' +
-    '</strong>' +
-    '<div><a style="margin-top: 2em; " id="btn-ok" class="btn btn-default">OK!</a></div>';
+    '</strong>';
     var output = success;
     $('#alert-dialogue').append(output);
 
