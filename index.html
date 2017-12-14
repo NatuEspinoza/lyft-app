@@ -27,7 +27,7 @@
   <!-- sección inicial -->
   <div class="inicial">
     <!-- sección de login -->
-    <div id="inicial" class="container back">
+    <div id="inicial" class="container-fluid back">
       <div class="row">
         <div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4" style="margin-top: 2em;">
           <img class="img-responsive" src="assets/img/logo.png" alt="Logo">
@@ -51,7 +51,7 @@
     </div>
 
     <!-- Formulario en donde el usuario registra su país y número de teléfono -->
-    <div id="form" class="container" style="display: none">
+    <div id="form" class="container-fluid" style="display: none">
       <div class="row">
         <div class="col-xs-12 col-sm-12" style="margin-top: 2em;">
           <span id="return" class="glyphicon glyphicon-menu-left btn btn-default" aria-hidden="true"></span>
@@ -80,6 +80,8 @@
           <a id="btn-next" class="btn btn-default btn-lg btn-block disabled">Next</a>
           <hr>
         </div>
+        <div id="alert">
+        </div>
       </div>
       <div class="row" style="margin-top:5em;">
         <div class="col-xs-12 col-sm-12">
@@ -90,18 +92,77 @@
     </div>
 
     <!-- Formulario de verificación de número -->
-    <div id="verify" class="container" style="display: none">
+    <div id="verify" class="container-fluid" style="display: none">
       <div class="row">
         <div class="col-xs-12 col-sm-12" style="margin-top: 2em;">
           <span id="return-2" class="glyphicon glyphicon-menu-left btn btn-default" aria-hidden="true"></span>
           <h2 style="text-align: center;">Verify phone number</h2>
           <p style="text-align: center;">Join now for free ride credit</p>
           <hr>
-          <span>LAB- </span>
+          <div class="col-xs-offset-3 col-sm-offset-3 col-xs-1 col-sm-1">
+            <span>LAB-</span>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <input id="codigo" type="text" class="form-control style-input" name="x" placeholder="xxx">
+          </div>
+        </div>
+        <div class="row" style="margin-top:5em;">
+          <div id="alert2" style="margin-bottom: 1em;">
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            <a id="btn-next2" class="btn btn-default btn-lg btn-block disabled" style="margin-top: 3em;">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de registro Sign-up -->
+    <div id="form-signUp" class="container-fluid" style="display: none">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12" style="margin-top: 2em;">
+          <span id="return-3" class="glyphicon glyphicon-menu-left btn btn-default" aria-hidden="true"></span>
+          <h2 style="text-align: center;">Sign up</h2>
+          <p style="text-align: center;">Join now for free ride credit</p>
+          <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <form class="form-horizontal">
+            <div>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Alias:</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password:</label>
+              <div class="controls">
+                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********">
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="control-group">
+              <label class="control-label" for="rememberme"></label>
+              <div class="controls">
+                <label class="checkbox inline" for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  I agree to Lyft'ss <a href="#">Terms of Service</a>
+                </label>
+              </div>
+            </div>
+          </div>
+            </form>
+          </div>
+        </div>
         </div>
         <div class="row" style="margin-top:5em;">
           <div class="col-xs-12 col-sm-12">
-            <a id="btn-next2" class="btn btn-default btn-lg btn-block disabled">Next</a>
+            <a id="btn-next3" class="btn btn-default btn-lg btn-block disabled" style="margin-top: 3em;">Next</a>
           </div>
         </div>
       </div>

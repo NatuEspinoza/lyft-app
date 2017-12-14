@@ -13,7 +13,7 @@ body {
 #splash {
   width: 100%;
   height: auto;
-  background: linear-gradient(#76278f, #2b1e66);
+  background: linear-gradient(#ff00bf, #2b1e66);
 }
 
 #title1 {
@@ -37,7 +37,7 @@ body {
   height: 100vh;
   background-image: url(../img/background.jpg);
   background-size: cover;
-  background-position: left;
+  background-position: right;
 }
 .btn-default {
   background-color: #ff00bf;
@@ -64,4 +64,16 @@ body {
   color: #380063;
   background-color: #f660d0;
   border-color: #f660d0;
+}
+
+/* Sección de validación */
+.style-input {
+  width: 4em;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  background: #380063;
+}
+
+.style-input:focus {
+  outline:0;
 }

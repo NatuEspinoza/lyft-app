@@ -53,6 +53,13 @@ $('#number').keyup(function() {
   if (value > 10 || $('#number').val() == '') {
     $('#btn-next').addClass('disabled');
   }
+  if (isNaN($('#number').val())){
+    $('#alert').html('<h3 style="color: #ff00bf;">Favor ingresar sólo números!</h3>');
+    $('#btn-next').addClass('disabled');
+  }  else{
+      $('#alert').text('');
+  }
+  return false;
 });
 /**
  * Alerta con código aleatorio
@@ -99,5 +106,43 @@ $('#return-2').click(function(){
   $('#form').show();
   $('#verify').hide();
 })
+
+/**
+ * Función para habilitar botón de la sección de verify
+ */
+ /**
+  * Función para desabilitar y habilitar boton
+  */
+ $('#codigo').keyup(function() {
+   var value = $('#codigo').val().length;
+   if (value <=3) {
+     $('#btn-next2').removeClass('disabled')
+   }
+   if (value >3 || $('#codigo').val() == ''){
+     $('#btn-next2').addClass('disabled');
+   }
+   if (isNaN($('#codigo').val())){
+     $('#alert2').html('<h3 style="color: #ff00bf;">Favor ingresar sólo números!</h3>');
+     $('#btn-next2').addClass('disabled');
+   }  else{
+       $('#alert2').text('');
+   }
+   return false;
+ });
+
+ /**
+  * Función para botón NEXT para avanzar a la sección del formulario sign up
+  */
+ $('#btn-next2').click(function(){
+   $('#verify').hide();
+   $('#form-signUp').show();
+ })
+ /**
+  * Función para regresar a la sección de Verify
+  */
+  $('#return-3').click(function(){
+    $('#verify').show();
+    $('#form-signUp').hide();
+  })
 
 });
